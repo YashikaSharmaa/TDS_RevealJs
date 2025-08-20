@@ -16,7 +16,7 @@ Open with context: macro environment, interest rate backdrop, and any regulatory
 Note:
 Call out growth drivers and mix shift. Flag any one-offs.
 
---
+Email: 24f2001055@ds.study.iitm.ac.in
 
 ### Outlook (Next Quarter)
 - Pipeline coverage: **1.8×** bookings
