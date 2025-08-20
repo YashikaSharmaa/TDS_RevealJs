@@ -1,7 +1,6 @@
 # Q3 Earnings Overview
 **Prepared for Stakeholders**
 
-- Report period: Q3 FY2025
 - Coverage: Revenue, Margin, Capital Adequacy, Outlook
 
 Note:
