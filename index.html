@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Quarterly earnings presentation with RevealJS: markdown, fragments, code highlighting, math, and speaker notes." />
+  <title>Quarterly Earnings Report — RevealJS</title>
+
+  <!-- RevealJS Core & Theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css" id="theme">
+
+  <!-- Highlight.js theme for code -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/atom-one-dark.css">
+
+  <!-- KaTeX CSS for math rendering (Reveal Math plugin loads JS automatically) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+
+  <style>
+    .reveal .footer {
+      position: absolute; bottom: 12px; left: 24px; right: 24px;
+      font-size: 18px; opacity: .7; display: flex; justify-content: space-between;
+    }
+    .badge { padding: .2rem .5rem; border-radius: 999px; background: rgba(255,255,255,.12); }
+    .email-box {
+      margin-top: 1.5rem;
+      padding: .75rem 1rem;
+      border: 2px dashed #ccc;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Title Slide -->
+      <section>
+        <h1>Quarterly Earnings Report</h1>
+        <p>Interactive stakeholder briefing</p>
+        <div class="email-box">
+          <p><small>Email (for contact): <a href="mailto:24f2001055@ds.study.iitm.ac.in">24f2001055@ds.study.iitm.ac.in</a></small></p>
+        </div>
+        <aside class="notes">
+          Welcome everyone. This interactive deck showcases our Q-on-Q performance and highlights. Use the right/left keys to navigate; press <b>S</b> to open speaker view with presenter notes.
+        </aside>
+      </section>
+
+      <!-- Contact Slide -->
+      <section>
+        <h3>Contact</h3>
+        <p>Email: 24f2001055@ds.study.iitm.ac.in</p>
+        <aside class="notes">
+          Provide direct contact information before diving into financial details.
+        </aside>
+      </section>
+
+      <!-- MARKDOWN SLIDES (external file) -->
+      <section data-markdown="slides.md"
+               data-separator="^\n---\n"
+               data-separator-vertical="^\n--\n"
+               data-separator-notes="^Note:"
+               data-charset="utf-8">
+      </section>
+
+      <!-- Animated elements using fragments -->
+      <section>
+        <h2>Key Financial Highlights</h2>
+        <ul>
+          <li class="fragment">Revenue Growth: <b>+12%</b> YoY</li>
+          <li class="fragment">Net Profit Margin: <b>15%</b></li>
+          <li class="fragment">CET1 Ratio: <b>13.1%</b></li>
+          <li class="fragment">Active Customers: <b>+8%</b></li>
+        </ul>
+        <aside class="notes">
+          Reveal each metric gradually to maintain focus. Mention drivers behind revenue growth and cost discipline sustaining margins.
+        </aside>
+      </section>
+
+      <!-- Code sample with syntax highlighting -->
+      <section>
+        <h2>Pipeline to KPIs (Example)</h2>
+        <pre><code class="language-python">import pandas as pd
+
+kpis = (
+    pd.read_csv("earnings.csv")
+      .groupby(["quarter"]).agg(
+          revenue=("revenue", "sum"),
+          net_income=("net_income", "sum"),
+      )
+)
+
+kpis["margin"] = (kpis["net_income"] / kpis["revenue"]) * 100
+print(kpis.round(2))
+</code></pre>
+        <aside class="notes">
+          Briefly explain the reproducibility of results. This snippet demonstrates transparent KPI derivation from the raw dataset.
+        </aside>
+      </section>
+
+      <!-- Math (financial formula) -->
+      <section>
+        <h2>Valuation & Return Metrics</h2>
+        <p>Return on Equity (ROE)</p>
+        <p>\[ ROE = \frac{\text{Net Income}}{\text{Average Shareholders' Equity}} \times 100\% \]</p>
+        <p>Net Present Value (NPV)</p>
+        <p>\[ NPV = \sum_{t=0}^{T} \frac{C_t}{(1 + r)^{t}} \]</p>
+        <aside class="notes">
+          Use ROE to compare profitability across periods and peers. NPV is central for project appraisal—highlight discount rate sensitivity.
+        </aside>
+      </section>
+
+      <!-- Closing / QR -->
+      <section>
+        <h2>Thank You</h2>
+        <p class="fragment">Questions? Discussion & next steps.</p>
+        <div class="email-box fragment">
+          <p><small>Email: <a href="mailto:24f2001055@ds.study.iitm.ac.in">24f2001055@ds.study.iitm.ac.in</a></small></p>
+        </div>
+        <aside class="notes">
+          Invite Q&A. Offer to share underlying datasets and methodology appendix if needed.
+        </aside>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- RevealJS core & plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/math/math.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      center: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ],
+      // Configure math to KaTeX (default via plugin)
+      math: {
+        // KaTeX is loaded by the plugin; options can be customized here if needed
+      }
+    });
+  </script>
+
+  <div class="footer">
+    <span class="badge">Quarterly Earnings</span>
+    <span><small>Email: 24f2001055@ds.study.iitm.ac.in</small></span>
+  </div>
+</body>
+</html>
