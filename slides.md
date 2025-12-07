@@ -1,5 +1,5 @@
    Quarterly Earnings Report — RevealJS       .reveal .footer { position: absolute; bottom: 12px; left: 24px; right: 24px; font-size: 18px; opacity: .7; display: flex; justify-content: space-between; } .badge { padding: .2rem .5rem; border-radius: 999px; background: rgba(255,255,255,.12); } .email-box { margin-top: 1.5rem; padding: .75rem 1rem; border: 2px dashed #ccc; border-radius: 12px; background: rgba(255,255,255,0.05); }
-
+24f2001055@ds.study.iitm.ac.in
 Quarterly Earnings Report
 =========================
 
