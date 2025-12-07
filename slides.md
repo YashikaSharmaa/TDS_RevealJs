@@ -1,6 +1,8 @@
    Quarterly Earnings Report — RevealJS       .reveal .footer { position: absolute; bottom: 12px; left: 24px; right: 24px; font-size: 18px; opacity: .7; display: flex; justify-content: space-between; } .badge { padding: .2rem .5rem; border-radius: 999px; background: rgba(255,255,255,.12); } .email-box { margin-top: 1.5rem; padding: .75rem 1rem; border: 2px dashed #ccc; border-radius: 12px; background: rgba(255,255,255,0.05); }
-24f2001055@ds.study.iitm.ac.in
+
 Quarterly Earnings Report
+
+24f2001055@ds.study.iitm.ac.in
 =========================
 
 Interactive stakeholder briefing
@@ -8,7 +10,7 @@ Interactive stakeholder briefing
 Email (for contact): [24f2001055@ds.study.iitm.ac.in](mailto:24f2001055@ds.study.iitm.ac.in)
 
 Welcome everyone. This interactive deck showcases our Q-on-Q performance and highlights. Use the right/left keys to navigate; press **S** to open speaker view with presenter notes.
-
+24f2001055@ds.study.iitm.ac.in
 ### Contact
 
 Email: 24f2001055@ds.study.iitm.ac.in
@@ -17,7 +19,7 @@ Provide direct contact information before diving into financial details.
 
 Key Financial Highlights
 ------------------------
-
+24f2001055@ds.study.iitm.ac.in
 *   Revenue Growth: **+12%** YoY
 *   Net Profit Margin: **15%**
 *   CET1 Ratio: **13.1%**
